@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/asset_image"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        app:layout_constraintHorizontal_weight="1"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/asset_index"
+
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/asset_index"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintVertical_weight="1"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/asset_name"
+        app:layout_constraintLeft_toRightOf="@id/asset_image"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="资产编号"/>
+
+    <TextView
+        android:id="@+id/asset_name"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintVertical_weight="1"
+
+        app:layout_constraintTop_toBottomOf="@id/asset_index"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/asset_image"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="资产名字"/>
+        
+
+</androidx.constraintlayout.widget.ConstraintLayout>
